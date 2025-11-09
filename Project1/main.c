@@ -1,20 +1,18 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-
-void myPrint(char input[100]) {
-    printf("This is input text %s\n", input);
-}
 
 int main() {
-    int myFavoriteNumber = 0;
-    char myChar[100];
-    printf("enter your Number\n");
-    scanf("%d",&myFavoriteNumber);
-    printf("You entered number is %d\n", myFavoriteNumber);
-    printf("enter your char\n");
-    scanf("%s",myChar);
-    myPrint(myChar);
-    return 1;
+
+    // calculate area and perimeter of a rectangle
+    double length = 5.0;
+    double width = 3.0;
+    double area = length * width;
+    double perimeter = 2 * (length + width);
+
+    printf("The area of ractangle having height %f and width %f is %f and perimiter is %f\n", length, width, area, perimeter);
+    
+    return 0;
 }
 
 
